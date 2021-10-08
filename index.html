@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+@media only screen and (max-width: 600px) {
+        body {
+            background: #00001e!important;
+        }
+    }
+</style>
+</head>
+
+
+<head>
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<meta content="Hire Miners to earn USDC" name="description">
+	<meta name="image" content="images/opimage.png">
+	<!-- opengraph image -->
+	<meta property="og:image" content="images/opimage.png">
+	<meta property="og:title" content="USDC MINER">
+	<meta property="og:type" content="website" />
+	<meta property="og:description" content="Hire Miners to earn USDC">
+	<meta property="og:url" content="index-2.html">
+	<!-- Twitter meta -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="index-2.html">
+	<meta name="twitter:title" content="USDC MINER">
+	<meta name="twitter:description" content="Hire Miners to earn USDC">
+	<meta name="twitter:image" content="images/opimage.png">
+	<!-- favicon files -->
+	 <link rel="icon" type="image/png" href="images/icon.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="images/icon.png" sizes="16x16" />
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+	<title>USDC MINER</title>
+	<!-- bootstrap core CSS -->
+	<link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+	<link href="assets/css/jumbotron-narrow.css" rel="stylesheet">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/custom.css" rel="stylesheet">
+	<!-- <link href="fonts.min.css" rel="stylesheet" type="text/css"> -->
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&amp;display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="modal" id="myModal">
+		<div class="modal-content">
+			<div id="modal-internal"></div>
+		</div>
+	</div>
+	<div class="custom-container">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div></div>
+				<div class="navbar-header">
+				</div>
+
+				<div class="mobile-align">
+								<ul class="nav navbar-nav navbar-right font-weight-normal">
+											<ul class="nav navbar-nav navbar-right font-weight-normal">
+													<ul class="nav navbar-nav navbar-right font-weight-normal">
+												<li><a class="social-pad" href="https://t.me/CryptoMiningTeam" target="_blank"><img alt="telegram"
+													class="social-icons" src="images/telegram.svg"><span
+													class="hide-mobile">Telegram</span></a></li>
+													<li><a class="social-pad" href="https://shibaminer.co/" target="_blank"><img
+						alt="Telegram" class="social-icons" src="images/shiba.png"><span
+			class="hide-mobile">Shiba</span></a></li>
+			<li><a class="social-pad" href="https://busdminer.co/" target="_blank"><img
+alt="Telegram" class="social-icons" src="images/busd.png"><span
+class="hide-mobile">BUSD</span></a></li>
+<li><a class="social-pad" href="https://bnbminer.co/" target="_blank"><img
+alt="Telegram" class="social-icons" src="images/wbnb.png"><span
+class="hide-mobile">WBNB</span></a></li>
+										<li><a class="social-pad"
+													href="https://bscscan.com/address/0xa315081633ef44995a9ef6233a4e4ff81b2d124d#code"
+													target="_blank"><img alt="BscScan Logo" class="social-icons" src="images/bscan_logo.png"><span
+													class="hide-mobile">Contract</span></a></li>
+											</ul>
+
+				</div>
+			</div>
+		</nav>
+		<div>
+			<ul style="display:none;" class="nav nav-tabs nav-justified" id="myTabs" role="tablist">
+				<li role="presentation" class="active"><a href="index.html#home" id="miners-tab" role="tab" data-toggle="tab"
+						aria-controls="home" aria-expanded="true">USDC Miner</a></li>
+			</ul>
+			<div class="tab-content" id="myTabContent">
+				<div class="tab-pane fade active in" role="tabpanel" id="home" aria-labelledby="miners-tab">
+
+
+					<div class="banner">
+						<img width="350px" src="images/Logo&#32;Horizontaal.png" alt="">
+						<div class="title">
+							<p class="daily">12% Daily</p>
+							<p class="apr">4,380% APR</p>
+						</div>
+					</div>
+					<div>
+						<div class="container-fluid miners-tally-container">
+							<img alt="Miners" class="icon" src="images/miner.png">
+							<h2 class="tally-text"><u><span class="num-miners">0</span></u> Miners</h2>
+						</div>
+						<div class="digging-mined-container">
+							<div class="custom-row">
+								<img alt="Digging" class="icon" src="images/pickaxerr.png">
+								<div class="dm-container-right">
+									<h2>Digging</h2>
+									<p><span id="production-rate">0</span> feet per hour</p>
+								</div>
+							</div>
+							<div class="custom-row">
+								<img alt="Mined" class="icon" src="images/mine.svg">
+								<div class="dm-container-right">
+									<h2>Mined</h2>
+									<p><span id="sell-price">?</span> USDC</p>
+									<p><span id="until-full">?</span> until full</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="spend-container">
+							<div class="spend-input-continer">
+								<label for="approve">1. Enter USDC Amount & Click Approve Below</label>
+								<div class="spend-input">
+									<input class="form-control" id="spend-allowance" name="approve" onchange="" step="1000"
+									type="number" value="5000">
+									<span class="bnb-text">USDC</span>
+													</div>
+									<button class="btn btn-lg btn-buy" onclick="approve()" role="button">
+								Approve Spend
+							</button>
+							<p id="spend-limit"></p>
+
+								<label for="spend">2. Enter USDC Amount & Click Hire Below</label>
+								<div class="spend-input">
+									<input class="form-control" id="eth-to-spend" name="spend" onchange="updateBuyPrice()" step="100"
+									type="number" value="500">
+									<span class="bnb-text">USDC</span>
+								</div>
+							</div>
+							<button class="btn btn-lg btn-buy" onclick="buyEggs2()" role="button">
+								Hire <span id="eggs-to-buy-2">?</span> Miners
+							</button>
+						</div>
+						<div class="other-button-container">
+							<button class="btn btn-lg btn-hatch" onclick="hatchEggs1()"
+									role="button">Hire more Miners</button>
+							<button class="btn btn-lg btn-sell"
+									onclick="sellEggs(displayTransactionMessage); document.getElementById('sellprice')"
+									role="button">Pocket your USDC</button>
+						</div>
+
+						<div class="altcolor">
+							<img alt="Digging" class="icon" src="images/icon.png">
+							<div>
+								<p>Contract: <span id="contract-balance">?</span></p>
+								<p>You: <span id="user-balance">?</span></p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<footer class="footer">
+
+
+					<!-- <div class="row">
+
+						<div class="col-lg-6">
+							<h4><u>Sustainability</u></h4>
+							<p>MATIC Miner pays a modest 3% daily, allowing investors to rest easy knowing that their
+								investments have unlimited growth potential and a maximum, improbable risk of less than
+								3%.
+
+								<h4><u>Verified Public Contract</u></h4>
+								<p>The MATIC Miner contract is public, verified and can be viewed here on <a
+										href="https://polygonscan.com/address/0xf08665261ef76e56e732c711330e905020e445da"
+										target="_blank"><u>FTMScan</u></a>.
+								</p>
+
+
+						</div>
+						<div class="col-lg-6">
+							<h4><u>Miner Info</u></h4>
+							<p>MATIC Miner pays 3% daily, according to the current mining efficiency rate. The mining
+								efficiency rate rises and falls as you and other players hire miners, compound earnings
+								and pocket MATIC. </p>
+							<p>The object of the game is hiring more miners, sooner and more often than other players.
+								This in turn earns you more MATIC faster. Hiring more miners using your daily MATIC
+								earnings will 3x your miners within 30 days or less.</p>
+
+						</div> -->
+
+						<!-- <div class="col-lg-12">
+							<center>
+								<p><span><a href="instructions.html" target="_blank"><img alt="How To Start Mining"
+												src="quesionmarkguy.png" width="15%" height="auto"><b>How To Start
+												Mining</b></a></span></p>
+							</center>
+						</div> -->
+
+
+						<footer class="footer">
+
+							<div class="">
+								<div class="col-md-12">
+									<font style="font-size:14px">
+										<center>
+											<p>Earn 10% of the USDC used to hire miners by anyone who starts mining
+												using your link: <b><a id="playerreflink" onclick="copyRef()">?
+												<p></p><input id="copytextthing" style="display:none;" type="text" value="Hello Worldfdgerh"></a></b>
+										</center>
+									</font>
+								</div>
+								</footer>
+							<center>
+								<ul class="nav navbar-nav navbar-right font-weight-normal">
+											<ul class="nav navbar-nav navbar-right font-weight-normal">
+													<ul class="nav navbar-nav navbar-right font-weight-normal">
+
+												<li><a class="social-pad" href="https://t.me/CryptoMiningTeam" target="_blank"><img alt="telegram"
+													class="social-icons" src="images/telegram.svg"><span
+													class="hide-mobile">Telegram</span></a></li>
+
+													<li><a class="social-pad" href="https://shibaminer.co/" target="_blank"><img
+			           			alt="Telegram" class="social-icons" src="images/shiba.png"><span
+		                 	class="hide-mobile">Shiba</span></a></li>
+
+                   			<li><a class="social-pad" href="https://busdminer.co/" target="_blank"><img
+                      alt="Telegram" class="social-icons" src="images/busd.png"><span
+                    class="hide-mobile">BUSD</span></a></li>
+
+                     <li><a class="social-pad" href="https://bnbminer.co/" target="_blank"><img
+                  alt="Telegram" class="social-icons" src="images/wbnb.png"><span
+                     class="hide-mobile">WBNB</span></a></li>
+
+										<li><a class="social-pad"	href="https://bscscan.com/address/0xa315081633ef44995a9ef6233a4e4ff81b2d124d#code"
+													target="_blank"><img alt="BscScan Logo" class="social-icons" src="images/bscan_logo.png"><span
+													class="hide-mobile">Contract</span></a></li>
+											</ul>
+							</center>
+
+						</div>
+				</footer>
+			</div>
+
+			<!-- scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/interface.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/web3.min.js"></script>
+			<script src="assets/js/main_eth.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+
+</body>
+
+
+</html>
