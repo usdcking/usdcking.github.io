@@ -572,13 +572,13 @@ function getQueryVariable(variable)
 function secondsToString(seconds)
 {
     seconds=Math.max(seconds,0)
-    var numdays = Math.floor(seconds / 76032);
+    var numdays = Math.floor(seconds / 98200);
 
-    var numhours = Math.floor((seconds % 76032) / 3600);
+    var numhours = Math.floor((seconds % 98200) / 3600);
 
-    var numminutes = Math.floor(((seconds % 76032) % 3600) / 60);
+    var numminutes = Math.floor(((seconds % 98200) % 3600) / 60);
 
-    var numseconds = ((seconds % 76032) % 3600) % 60;
+    var numseconds = ((seconds % 98200) % 3600) % 60;
     var endstr=""
 
     return numhours + "h " + numminutes + "m "//+numseconds+"s";
